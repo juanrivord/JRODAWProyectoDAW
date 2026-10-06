@@ -1,6 +1,15 @@
 # W10ED - Cliente de desarrollo - Visual Studio Code
 
-
+# Índice de Contenidos
+- [W10ED - Cliente de desarrollo - Visual Studio Code](#w10ed---cliente-de-desarrollo---visual-studio-code)
+- [Índice de Contenidos](#índice-de-contenidos)
+      - [Datos adicionales](#datos-adicionales)
+  - [Fase 0. Instalación de extensiones](#fase-0-instalación-de-extensiones)
+  - [Fase 1. Creación del proyecto](#fase-1-creación-del-proyecto)
+    - [Creamos la carpeta en la que vamos a guardar nuestro proyecto inicialmente.](#creamos-la-carpeta-en-la-que-vamos-a-guardar-nuestro-proyecto-inicialmente)
+    - [Creamos estructura básica para trabajar](#creamos-estructura-básica-para-trabajar)
+    - [Vamos a meter en este proyecto los archivos del Tema 3](#vamos-a-meter-en-este-proyecto-los-archivos-del-tema-3)
+  - [Fase 2. Enlace SFTP con el servidor](#fase-2-enlace-sftp-con-el-servidor)
 
 #### Datos adicionales
 Estamos utilizando Windows 10 como sistema operativo cliente, guardando los proyectos en:
