@@ -1,4 +1,4 @@
-# Guía de creacion de un proyecto, enlace SFTP con el servidor y enlace con GitHub
+# W10ED - Cliente de desarrollo - Visual Studio Code
 
 
 
@@ -101,3 +101,5 @@ Se nos abrira un **JSON** con información sobre la configuracion SFTP. Colocare
     ]
 }
 ```
+
+Una vez conectado todo, deberíamos 
