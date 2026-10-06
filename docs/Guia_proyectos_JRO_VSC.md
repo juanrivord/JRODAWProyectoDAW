@@ -18,15 +18,30 @@ Utilizando Google Chrome como navegador de pruebas y uso.
 
 En la parte izquierda en el icono ![IconoExtension](images/iconoExtensiones.PNG) o pulsando la combinacion de teclas (Crtl+Shift+X) abrimos la ventana de extensiones, buscaremos instalar esta lista:
 
-* SFTP
-* Live Server
-* Path Intellisense _(Opcional)_ **Recomendado**
-* PHP
-* PHP Profiler 
-* HTML CSS Support
-* HTML/CSS/JavaScript Snippets _(Opcional)_ **Recomendado**
-* Auto Rename Tags _(Opcional)_ **Recomendado**
-* Remote - SSH _(Opcional)_ **Recomendado**
+* **SFTP**
+  
+La utilizamos para conectar con el servidor remoto
+* **Live Server** 
+
+Utilizada para hacer pruebas de **HTML,CSS,JavaScript** desde el cliente
+* **Path Intellisense** _(Opcional)_ **Recomendado**
+
+Nos autocompleta las direcciones de los archivos incluyendo el repositorio y el servidor
+* **PHP**
+
+Nos da soporte para programar en **PHP**
+* **HTML CSS Support**
+
+Nos da soporte para programar en **HTML,CSS**
+* **HTML/CSS/JavaScript Snippets** _(Opcional)_ **Recomendado**
+
+Nos ayuda con el desarrollo recomendando funciones,etiquetas para cada momento
+* **Auto Rename Tags** _(Opcional)_ **Recomendado**
+
+Nos cierra automaticamente las etiquetas en **HTML** y si cambiamos alguna desde el principio, nos la cambia al final tambien.
+* **Remote - SSH** _(Opcional)_ **Recomendado**
+
+Para evitar tener que conectarnos desde el terminal al servidor, esta extensión nos permite conectarnos mediante **SSH** al servidor y ver sus archivos.
 
 Le daremos click a instalar y si nos pide algun tipo de confirmación, aceptaremos **Trust Publishers** y siguiente.
 
