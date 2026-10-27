@@ -18,32 +18,36 @@
     <main>
 
         <section id="UD1">
-            <h2>1.Ciberseguridad</h2>
-            <div class="caja_practicas">
-                <a href="./webroot/docs/EstudioTema1.pdf" class="cajas_imagenes" target="_blank">Estudio tema 1</a>
-            </div>
+            <h2>1.Arquitectura web</h2>
             
         </section>
 
 
         <section id="UD2">
-            <h2>2.Servidor web seguro</h2>
+            <h2>2.Implantación, configuración y administración de servidores web</h2>
             <div class="caja_practicas">
-                <a href="https://github.com/juanrivord/JRODAWProyectoDAW/blob/main/docs/Guia_Instalacion_JRO_USED.md" class="cajas_imagenes" target="_blank">Estudio tema 2</a>
+                <a href="https://github.com/juanrivord/JRODAWProyectoDAW/blob/main/docs/Guia_Instalacion_JRO_USED.md" class="cajas_imagenes" target="_blank">USED - Servidor</a>
+                <a href="https://github.com/juanrivord/JRODAWProyectoDAW/blob/main/docs/Guia_proyectos_JRO_VSC.md" class="cajas_imagenes" target="_blank">W10ED - Cliente</a>
             </div>
                 
         </section>
 
 
         <section id="UD3">
-            <h2>3.Aplicación web segura</h2>
-            
+            <h2>3.Implantación, configuración y administración de servidores de aplicación</h2>
         </section>
 
 
         <section id="UD4">
-            <h2>4.Infraestructura web segura</h2>
+            <h2>4.Servicios de red implicados en el despliegue de aplicaciones</h2>
+        </section>
 
+        <section id="UD5">
+            <h2>5.Control de versiones</h2>
+        </section>
+
+        <section id="UD6">
+            <h2>6.Documentación</h2>
         </section>
         
     </main>
