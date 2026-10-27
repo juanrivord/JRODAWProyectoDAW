@@ -12,7 +12,7 @@
 <body>
     <header id="inicio">
             <img src="./webroot/images/logo.png" alt="Logo de I.E.S. Los Sauces" class="logo">
-        <h1>PROYECTO CIB JUAN RIVERA ORDÓÑEZ</h1>
+        <h1>PROYECTO DAW JUAN RIVERA ORDÓÑEZ</h1>
     </header>
 
     <main>
