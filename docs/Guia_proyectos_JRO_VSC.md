@@ -146,9 +146,28 @@ Nos saldra esta imagen para asistirnos en la conexión con la **Base de Datos**.
 ![Imagen asistente conexion BD](images/conexionBD.PNG)
 En nuestro caso utilizaremos **MariaDB**, pinchamos e iremos al siguiente paso.
 
-> [!IMPORTANT]
-> Vamos a configurar una conexión a la base de datos con un usuario y contraseña, sobra mencionar que el modo de autenticado que vamos a utilizar es el cómodo para trabajar en clase, en un entorno real lo suyo seria pedir la contraseña cada vez que nos conectaramos a la base de datos, y que esta cambiara periodicamente.
 
 ![Imagen configuracion conexion BD](images/configuracionBD.PNG)
 La imagen es bastante explicativa por si misma, pero comentaremos los datos importantes:
+
+* ***Connection name:*** Se refiere al nombre que le vamos a poner a la conexion desde el cliente, solo de manera visual para nosotros, conviene configurar nombres mnemonicos para la conexión a varias **BD**.
+
+* ***Connect using:*** Nos pide la manera de conectarnos, en nuestro caso sera por *IP* y *Puerto*.
+
+* ***Server address:*** Colocaremos la *IP* del servidor al que nos vamos a conectar.
+
+* ***Port:*** El puerto por el que nos vamos a conectar, normalmente para las bases de datos es **3306**.
+
+* ***Database:*** Aqui debemos poner la base de datos a la que nos vamos a conectar, si lo dejamos en blanco se conecta a mysql de manera general.
+
+* ***Username:*** El usuario que utilizaremos para conectarnos a la base de datos, este tiene que haber sido preconfigurado por un administrador de la **BD**.
+
+* ***Password mode:*** La guardamos como texto plano para no tener que ponerla todas las veces.
+    > [!IMPORTANT]
+    > Sobra mencionar que el modo de autenticado que vamos a utilizar es el cómodo para trabajar en clase, en un entorno real lo suyo seria pedir la contraseña cada vez que nos conectaramos a la base de datos, y que esta cambiara periodicamente.
+
+* ***Password:*** Aqui ponemos la contraseña del *USUARIO* para conectarnos.
+
+>[!NOTE]
+>Si no nos funciona, cabe destacar buscar problemas del permiso del usuario dentro del servidor, que el puerto este habilitado en el servidor o que algun parametro este mal puesto
 
