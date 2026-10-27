@@ -173,5 +173,7 @@ La imagen es bastante explicativa por si misma, pero comentaremos los datos impo
 
 ## Fase 4. Conexión con el repositorio y versionado
 
-Para esta fase no hace falta instalar ninguna extensión ya que **VSC** tiene integracion con Git desde el segundo 1. Para empezar clicaremos en el icono de control de versiones: 
+Para esta fase no hace falta instalar ninguna extensión ya que **VSC** tiene integracion con Git desde el segundo 1.
+
+Para empezar clicaremos en el icono de control de versiones ![Icono versiones](images/iconoGit.PNG) que se encuentra debajo de la lupa.
 
