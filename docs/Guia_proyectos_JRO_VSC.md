@@ -6,11 +6,9 @@
       - [Datos adicionales](#datos-adicionales)
   - [Fase 0. Instalación de extensiones](#fase-0-instalación-de-extensiones)
   - [Fase 1. Creación del proyecto](#fase-1-creación-del-proyecto)
-    - [Creamos la carpeta en la que vamos a guardar nuestro proyecto inicialmente.](#creamos-la-carpeta-en-la-que-vamos-a-guardar-nuestro-proyecto-inicialmente)
-    - [Creamos estructura básica para trabajar](#creamos-estructura-básica-para-trabajar)
-    - [Vamos a meter en este proyecto los archivos del Tema 3](#vamos-a-meter-en-este-proyecto-los-archivos-del-tema-3)
   - [Fase 2. Enlace SFTP con el servidor](#fase-2-enlace-sftp-con-el-servidor)
   - [Fase 3. Administración de la base de datos](#fase-3-administración-de-la-base-de-datos)
+  - [Fase 4. Conexión con el repositorio y versionado](#fase-4-conexión-con-el-repositorio-y-versionado)
 
 #### Datos adicionales
 Estamos utilizando Windows 10 como sistema operativo cliente, guardando los proyectos en:
@@ -67,8 +65,7 @@ Le daremos click a instalar y si nos pide algun tipo de confirmación, aceptarem
 
 ## Fase 1. Creación del proyecto
 
-### Creamos la carpeta en la que vamos a guardar nuestro proyecto inicialmente.
-
+Creamos la carpeta en la que vamos a guardar nuestro proyecto inicialmente.
 
 Arriba a la izquierda pulsamos:
 
@@ -80,7 +77,9 @@ Nos tiene que quedar algo asi:
 
 ![ProyectoNuevoCreado](images/proyectoNuevoCreado.PNG)
 
-### Creamos estructura básica para trabajar
+---
+
+Creamos estructura básica para trabajar
 
 Un archivo nuevo que se llame **index.html** pulsando en el icono del archivo New File...
 
@@ -104,7 +103,7 @@ Colocaremos una estructura básica de html:
 
 ---
 
-### Vamos a meter en este proyecto los archivos del Tema 3
+ Vamos a meter en este proyecto los archivos del Tema 3
 
 Movemos todos los archivos del tema dentro del proyecto, sin cambiar nada
 ![ImagenProyectoTema3](images/proyectoTema3Clonado.PNG)
@@ -170,4 +169,7 @@ La imagen es bastante explicativa por si misma, pero comentaremos los datos impo
 
 >[!NOTE]
 >Si no nos funciona, cabe destacar buscar problemas del permiso del usuario dentro del servidor, que el puerto este habilitado en el servidor o que algun parametro este mal puesto
+
+
+## Fase 4. Conexión con el repositorio y versionado
 
