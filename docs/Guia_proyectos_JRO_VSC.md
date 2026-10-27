@@ -140,4 +140,15 @@ Una vez conectado todo, cada vez que guardemos se conectara con sftp al servidor
 
 ## Fase 3. Administración de la base de datos
 
-Utilizando **SQLTools** nos conectaremos a la base de datos
+Utilizando **SQLTools** nos conectaremos a la base de datos, para ello primero pinchamos en el icono de la extension ![Icono extenxionBD](images/iconoBD.PNG) y seleccionamos **Nueva conexion**.
+
+Nos saldra esta imagen para asistirnos en la conexión con la **Base de Datos**.
+![Imagen asistente conexion BD](images/conexionBD.PNG)
+En nuestro caso utilizaremos **MariaDB**, pinchamos e iremos al siguiente paso.
+
+> [!IMPORTANT]
+> Vamos a configurar una conexión a la base de datos con un usuario y contraseña, sobra mencionar que el modo de autenticado que vamos a utilizar es el cómodo para trabajar en clase, en un entorno real lo suyo seria pedir la contraseña cada vez que nos conectaramos a la base de datos, y que esta cambiara periodicamente.
+
+![Imagen configuracion conexion BD](images/configuracionBD.PNG)
+La imagen es bastante explicativa por si misma, pero comentaremos los datos importantes:
+
