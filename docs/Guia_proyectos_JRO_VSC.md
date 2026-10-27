@@ -10,6 +10,7 @@
     - [Creamos estructura básica para trabajar](#creamos-estructura-básica-para-trabajar)
     - [Vamos a meter en este proyecto los archivos del Tema 3](#vamos-a-meter-en-este-proyecto-los-archivos-del-tema-3)
   - [Fase 2. Enlace SFTP con el servidor](#fase-2-enlace-sftp-con-el-servidor)
+  - [Fase 3. Administración de la base de datos](#fase-3-administración-de-la-base-de-datos)
 
 #### Datos adicionales
 Estamos utilizando Windows 10 como sistema operativo cliente, guardando los proyectos en:
@@ -39,6 +40,11 @@ Nos autocompleta las direcciones de los archivos incluyendo el repositorio y el 
 * **PHP**
 
 Nos da soporte para programar en **PHP**
+
+* **PHP Debug**
+
+Extension de soporte para poder debugear en servidor con Xdebug
+
 * **HTML CSS Support**
 
 Nos da soporte para programar en **HTML,CSS**
@@ -51,6 +57,10 @@ Nos cierra automaticamente las etiquetas en **HTML** y si cambiamos alguna desde
 * **Remote - SSH** _(Opcional)_ **Recomendado**
 
 Para evitar tener que conectarnos desde el terminal al servidor, esta extensión nos permite conectarnos mediante **SSH** al servidor y ver sus archivos.
+
+* **SQLTools**
+
+Extension que nos permite conectar con la mayoria de las bases de datos y ejecutar scripts SQL.
 
 Le daremos click a instalar y si nos pide algun tipo de confirmación, aceptaremos **Trust Publishers** y siguiente.
 
@@ -96,7 +106,7 @@ Colocaremos una estructura básica de html:
 
 ### Vamos a meter en este proyecto los archivos del Tema 3
 
-Movemos todos los archivos del tema 3 dentro del proyecto, sin cambiar nada
+Movemos todos los archivos del tema dentro del proyecto, sin cambiar nada
 ![ImagenProyectoTema3](images/proyectoTema3Clonado.PNG)
 
 ## Fase 2. Enlace SFTP con el servidor
@@ -114,7 +124,7 @@ Se nos abrira un **JSON** con información sobre la configuracion SFTP. Colocare
     "port": 22,
     "username": "operadorweb", # El usuario configurado
     "password": "paso", # Su contraseña
-    "remotePath": "/var/www/html/DWESProyecto4/", # El directorio que queremos usar
+    "remotePath": "/var/www/html/JRODAWProyectoDAW/", # El directorio que queremos usar
     "uploadOnSave": true, # Con esto pasa los archivos cada vez que guarda
     "useTempFile": false,
     "openSsh": false,
@@ -122,8 +132,12 @@ Se nos abrira un **JSON** con información sobre la configuracion SFTP. Colocare
         "**/.git/**",
         "**/.vscode/**",
         "**/node_modules/**"
-    ]
+    ] # Poniendo en ignore lo que no queremos enviar al servidor, como archivos de configuracion
 }
 ```
 
-Una vez conectado todo, deberíamos 
+Una vez conectado todo, cada vez que guardemos se conectara con sftp al servidor e intentara sobreescribir el archivo en el mismo.
+
+## Fase 3. Administración de la base de datos
+
+Utilizando **SQLTools** nos conectaremos a la base de datos
