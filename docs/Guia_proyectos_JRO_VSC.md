@@ -1,9 +1,9 @@
-# W11ED - Cliente de Desarrollo
-**MOISÉS ALBERTO DOMÍNGUEZ CRUZ**
+# W10ED - Cliente de Desarrollo
+**JUAN RIVERA ORDOÑEZ**
 **IES LOS SAUCES - DAW2** (2026/2027)
 
 ## Índice
-- [W11ED - Cliente de Desarrollo](#w11ed---cliente-de-desarrollo)
+- [W10ED - Cliente de Desarrollo](#w10ed---cliente-de-desarrollo)
   - [Índice](#índice)
   - [1. Configuración de la máquina](#1-configuración-de-la-máquina)
   - [2. Cuentas administradoras y cuenta de desarrollador](#2-cuentas-administradoras-y-cuenta-de-desarrollador)
@@ -49,10 +49,10 @@ El sistema operativo utilizado es Windows 10 Pro.
 
 ## 2. Cuentas administradoras y cuenta de desarrollador
 * **Cuentas administradoras**: El dominio está gestionado por la Junta de Castilla y León (educa.jcyl).
-* **Cuenta de desarrollador**: Se utiliza la cuenta personal del portal (moisesa.domcru@educa.jcyl.es).
+* **Cuenta de desarrollador**: Se utiliza la cuenta personal del portal (juan.rivord@educa.jcyl.es).
 
 ## 3. Navegadores
-* El navegador principal utilizado es Mozilla Firefox.
+* El navegador principal utilizado es Google Chrome.
 
 ## 4. MobaXterm
 #### Instalación 
@@ -61,12 +61,12 @@ Descargar MobaXterm en este enlace : https://mobaxterm.mobatek.net/download.html
 #### 4.1 Crear una sessión SSH
 1. Abre MobaXterm y haz clic en el botón **"Session"** (situado en la esquina superior izquierda).
 2. Selecciona el tipo de sesión **"SSH"**.
-3. En el campo **"Remote host"**, introduce la dirección IP del servidor (por ejemplo, `10.199.9.184`).
+3. En el campo **"Remote host"**, introduce la dirección IP del servidor (por ejemplo, `10.199.8.97`).
 4. Marca la casilla **"Specify username"** e introduce tu usuario administrador (ej. `miadmin`).
 5. Haz clic en **"OK"**.
 6. Al abrirse la terminal, introduce la contraseña correspondiente.
 
-![alt text](../images/image-6.png)
+![alt text](images/image-6.png)
 
 #### 4.2 Crear una sessión SFTP
 1. Haz clic nuevamente en **"Session"** y selecciona la pestaña **"SFTP"**.
@@ -75,7 +75,7 @@ Descargar MobaXterm en este enlace : https://mobaxterm.mobatek.net/download.html
 4. Haz clic en **"OK"** e introduce la contraseña cuando el programa lo solicite.
 5. Se abrirá una interfaz gráfica con tus carpetas locales a la izquierda y las del servidor a la derecha (directorio inicial `/var/www/html`).
 
-![alt text](../images/image-7.png)
+![alt text](images/image-7.png)
 
 ## 5. NetBeans
 
@@ -86,35 +86,35 @@ Descargar MobaXterm en este enlace : https://mobaxterm.mobatek.net/download.html
 * Si se necesita soporte para otros lenguajes o herramientas, se debe acceder a **Tools > Plugins**.
 * En esta configuración específica, se activaron los módulos de **HTML5** y **PHP**.
 
-![alt text](../images/image.png)
+![alt text](images/image.png)
 
 ### 5.2 Creación de proyectos, modificación, borrado, prueba.
 * **Creación**: Los proyectos se guardarán en el disco de datos, en una carpeta llamada `PROYECTOS-NETBEANS` con la ruta `D:\PROYECTOS-NETBEANS`. Para crear un proyecto nuevo, se hace clic en **File > New Project**, eligiendo la categoría PHP y el tipo "PHP Application". Se le asigna un nombre (ej. `DWESProyectoTema4`) y se indica el directorio local. La configuración base utiliza PHP 8.3 y codificación por defecto UTF-8.
 
-![alt text](../images/image-8.png)
+![alt text](images/image-8.png)
 
-![alt text](../images/image-9.png)
+![alt text](images/image-9.png)
 
-![alt text](../images/image-10.png)
+![alt text](images/image-10.png)
 
 
-* **Configuración Remota**: En la configuración de ejecución (*Run Configuration*), se elige la opción "Remote Web Site (FTP, SFTP)". Se introduce la URL del proyecto del servidor web (ej. `http://10.199.9.184`), el usuario (`operadorweb`) y el directorio (`/DWESProyectoTema4`).
+* **Configuración Remota**: En la configuración de ejecución (*Run Configuration*), se elige la opción "Remote Web Site (FTP, SFTP)". Se introduce la URL del proyecto del servidor web (ej. `http://10.199.8.97`), el usuario (`operadorweb`) y el directorio (`/DWESProyectoTema4`).
 
-![alt text](../images/image-12.png)
+![alt text](images/image-12.png)
 
 * **Modificación**: En las opciones de subida de archivos (*Upload Files*), se marca **"On Save"**. De esta manera, cada vez que crees o modifiques el código de un archivo y pulses Guardar (`Ctrl + S`), NetBeans se conectará por SFTP y actualizará automáticamente el archivo en el servidor remoto, sin necesidad de subirlos manualmente.
 
-![alt text](../images/image-13.png)
+![alt text](images/image-13.png)
 
 * **Borrado**: Para borrar un archivo o proyecto, basta con hacer clic derecho sobre él en la pestaña *Projects* y seleccionar **Delete**. Al borrar un proyecto completo, NetBeans te preguntará si deseas eliminar únicamente la configuración del IDE o si también quieres eliminar las fuentes locales (*sources*). Al confirmar, y gracias a la sincronización remota, el cambio se reflejará también en el servidor web.
 
-![alt text](../images/image-14.png)
+![alt text](images/image-14.png)
 
-* **Prueba (Testing)**: Para probar tu desarrollo, haz clic derecho sobre el proyecto y selecciona **Run**, o pulsa el icono de reproducción (Play) en la barra superior. Al estar configurado el *Run Configuration* con tu IP, NetBeans abrirá automáticamente Firefox cargando la URL pública de tu servidor (ej. `http://10.199.9.184/MDCDWESProyectoTema4`).
+* **Prueba (Testing)**: Para probar tu desarrollo, haz clic derecho sobre el proyecto y selecciona **Run**, o pulsa el icono de reproducción (Play) en la barra superior. Al estar configurado el *Run Configuration* con tu IP, NetBeans abrirá automáticamente Firefox cargando la URL pública de tu servidor (ej. `http://10.199.8.97/JRODWESProyectoTema4`).
 
-![alt text](../images/image-15.png)
+![alt text](images/image-15.png)
 
-![alt text](../images/image-16.png)
+![alt text](images/image-16.png)
 
 ### 5.3 Administración de la base de datos
 NetBeans permite administrar de forma remota bases de datos MySQL/MariaDB directamente desde el IDE, facilitando la ejecución de scripts SQL y la visualización de tablas sin necesidad de cambiar a phpMyAdmin o a la consola.
@@ -124,25 +124,25 @@ NetBeans permite administrar de forma remota bases de datos MySQL/MariaDB direct
 2. Despliega el nodo **Databases** (Bases de datos).
 3. Haz clic derecho sobre **Databases** y selecciona **New Connection...** (Nueva conexión).
 
-![alt text](../images/image-18.png)
+![alt text](images/image-18.png)
 
 4. En el desplegable de drivers, selecciona **MySQL** o **MariaDB** y haz clic en *Next*. (Previamente descargar el plugin correspondiente a la base de datos).
 
-![alt text](../images/image-17.png)
+![alt text](images/image-17.png)
 
 5. Rellena los datos de tu servidor:
-   * **Host:** Introduce la IP de tu servidor Ubuntu (ej. `10.199.9.184`).
+   * **Host:** Introduce la IP de tu servidor Ubuntu (ej. `10.199.8.97`).
    * **Port:** `3306` (el puerto por defecto de MariaDB).
    * **Database:** Puedes dejarlo en blanco o poner el nombre de una base específica si ya está creada.
    * **User Name:** El usuario administrador de la base de datos que creaste (ej. `adminsql`).
    * **Password:** La contraseña de ese usuario (ej. `paso`). Marca la casilla "Remember password".
 
-![alt text](../images/image-19.png)
+![alt text](images/image-19.png)
 
 6. Haz clic en el botón **Test Connection**. Si la configuración remota (bind-address en Ubuntu y puertos de UFW) es correcta, aparecerá el mensaje de éxito.
 7. Haz clic en **Finish**. A partir de ahora podrás desplegar tu conexión para visualizar las tablas, insertar registros o abrir la ventana del editor SQL haciendo clic derecho > **Execute Command**.
 
-![alt text](../images/image-20.png)
+![alt text](images/image-20.png)
 
 ### 5.4 Conexión al repositorio y versionado (Git)
 Para llevar un control de versiones adecuado y conectar tu código con repositorios remotos (como GitHub o GitLab), NetBeans incorpora soporte nativo para Git.
@@ -205,7 +205,7 @@ Primero, instalamos estas extensiones buscando en la pestaña Extensions (icono 
 **Extensiones opcionales pero bastante útiles:**
 * Live Server, VirtualBox, Prettier, HTML CSS Intellisense.
 
-![alt text](../images/image-21.png)
+![alt text](images/image-21.png)
 
 ### 6.2 Creación y Configuración del Workspace
 
@@ -215,26 +215,26 @@ Para crearlo:
 1. Abre una ventana vacía sin ninguna carpeta abierta (`Ctrl + Shift + N`).
 2. Arriba del todo a la izquierda, ve a **File > Add Folder to Workspace...**
 
-![alt text](../images/image-22.png)
+![alt text](images/image-22.png)
 
 3. Nos abrirá un explorador. Yo recomiendo que, en el directorio que prefieras, crees una carpeta raíz para el workspace, y dentro se cree una carpeta para cada proyecto. Algo así:
    ```
    D:\
    └── PROYECTOS-VISUAL-STUDIO -> (Carpeta Workspace general)
-       ├── MDCDWESProyectoPEPE
-       ├── MDCDWECProyectoDWEC -> (Carpetas de proyectos)
-       ├── MDCDWESProyectoTema5
+       ├── JRODWESProyectoPEPE
+       ├── JRODWECProyectoDWEC -> (Carpetas de proyectos)
+       ├── JRODWESProyectoTema5
        └── ...
    ```
    *Si vas a reutilizar proyectos o crear nuevos, asegúrate de que estén ubicados dentro de la carpeta del workspace `D:\PROYECTOS-VISUAL-STUDIO`.*
 4. Selecciona las carpetas **DENTRO** de `PROYECTOS-VISUAL-STUDIO`, no la carpeta en sí (se pueden seleccionar todas a la vez).
 5. Una vez hecho, en el explorador del editor aparecerán los diferentes proyectos.
 
-![alt text](../images/image-23.png)
+![alt text](images/image-23.png)
 
 6. **IMPORTANTE:** Ve a **File > Save Workspace As...** y guárdalo (preferiblemente en la carpeta del workspace). Es necesario para algunas configuraciones más tarde.
 
-![alt text](../images/image-24.png)
+![alt text](images/image-24.png)
 
 > **⚠️ IMPORTANTE:** A partir de aquí, las siguientes configuraciones (SFTP, Git, Base de Datos y Debug) se aplican de forma independiente **DENTRO de cada uno de los proyectos** de tu Workspace.
 
@@ -245,12 +245,12 @@ En cada proyecto creamos una carpeta llamada `.vscode/` y dentro un archivo `sft
 El archivo tiene que tener este formato (modificar `name`, `host` y `remotePath`, y borrar los comentarios para que funcione):
 ```json
 {
-  "name": "MDC-ConexionSFTP", # Nombre identificativo para la conexión
+  "name": "JRO-ConexionSFTP", # Nombre identificativo para la conexión
   "context": ".", # Carpeta donde se suben/descargan los archivos en local ('.' = carpeta proyecto)
-  "host": "10.199.9.184", # Dirección IP o dominio del servidor remoto
+  "host": "10.199.8.97", # Dirección IP o dominio del servidor remoto
   "username": "operadorweb", # Nombre de usuario de acceso al servidor.
   "password": "paso", # Si no se pone te pregunta cada vez que cierres y abres el editor
-  "remotePath": "/var/www/html/MDCDWESProyectoTema4", # Ruta del directorio destino en el servidor remoto
+  "remotePath": "/var/www/html/JRODWESProyectoTema4", # Ruta del directorio destino en el servidor remoto
   "uploadOnSave": true, # Sube archivos automaticamente al modificar
   "ignore": [ # Lista de archivos o carpetas que la extensión debe omitir al sincronizar
       ".git",
@@ -283,18 +283,18 @@ Usando la extensión **SQLTools**:
 1. En la barra lateral izquierda, haz clic en el icono de base de datos de SQLTools (tiene forma de un pequeño cilindro o servidor).
 2. Haz clic en **Add New Connection** y selecciona el driver **MySQL/MariaDB**.
    
-![alt text](../images/image-25.png)
+![alt text](images/image-25.png)
 
 3. Rellena los datos de tu servidor:
-   * **Connection Name:** (ej. `MDC-BaseDatos`)
-   * **Server Address:** `10.199.9.184`
+   * **Connection Name:** (ej. `JRO-BaseDatos`)
+   * **Server Address:** `10.199.8.97`
    * **Port:** `3306`
     * **Database:** `mysql`
    * **Username:** `adminsql`
    * **Password:** Solicitar en cada conexión o guardar (contraseña: `paso`).
 4. Haz clic en **Save Connection** y luego en **Connect Now**. Podrás ejecutar sentencias SQL y ver tablas desplegando la conexión directamente desde VS Code.
 
-![alt text](../images/image-26.png)
+![alt text](images/image-26.png)
 
 ### 6.5 Control de versiones (Git)
 
