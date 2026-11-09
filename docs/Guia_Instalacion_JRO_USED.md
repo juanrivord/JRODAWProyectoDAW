@@ -119,7 +119,7 @@ sudo nano 00-installer-config.yaml
 ```
 
 - **Parámetros para CLASE (IES Los Sauces):**
-  - **Address (IP):** `10.199.9.114/22`
+  - **Address (IP):** `10.199.8.97/22`
   - **Gateway (Puerta de enlace):** `10.199.8.1`
   - **Name servers (DNS):** `10.151.123.21, 10.151.126.21`
 
@@ -322,7 +322,7 @@ Reinicio de apache: `sudo systemctl restart apache2`
 
 - Un certificado autofirmado cifrará la comunicación entre su servidor y cualquier cliente. Sin embargo, dado que no está firmado por ninguna de las autoridades certificadoras de confianza incluidas con los navegadores web y los sistemas operativos, los usuarios no pueden usar el certificado para validar la identidad de su servidor de forma automática. Como resultado, sus usuarios verán un error de seguridad cuando visiten su sitio.
 
-> `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/CN=10.199.9.114" -addext "subjectAltName = IP:10.199.9.114"`
+> `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/CN=10.199.8.97" -addext "subjectAltName = IP:10.199.8.97"`
 
 **Explicacion del Comando**
 - Openssl -> Es la utilidad para trabajar con criptografía y certificados.​
