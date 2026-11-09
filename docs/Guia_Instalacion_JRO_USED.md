@@ -43,7 +43,9 @@
     - [5.3. Comprobación del Servicio MariaDB](#53-comprobación-del-servicio-mariadb)
     - [5.4 Instalación de phpMyAdmin](#54-instalación-de-phpmyadmin)
     - [5.5 Comprobación de phpmyadmin](#55-comprobación-de-phpmyadmin)
-  - [6. Cuentas de Desarrollo](#6-cuentas-de-desarrollo)
+  - [6. xDebug](#6-xdebug)
+    - [6.1. Instalación de xDebug](#61-instalación-de-xdebug)
+  - [7. Cuentas de Desarrollo](#7-cuentas-de-desarrollo)
   - [Autor: Moises Dominguez Cruz , Juan Miguel Dominguez Perdigon](#autor-moises-dominguez-cruz--juan-miguel-dominguez-perdigon)
   - [Modificado por: Juan Rivera Ordóñez](#modificado-por-juan-rivera-ordóñez)
 
@@ -601,11 +603,19 @@ sudo ufw status
 ---
 ### 5.5 Comprobación de phpmyadmin
 
-Accede a traves de la URL **http://IP/phpmyadmin**  
+Accede a traves de la URL **http://10.199.8.97/phpmyadmin**  
 
 ---
 
-## 6. Cuentas de Desarrollo
+## 6. xDebug
+
+### 6.1. Instalación de xDebug
+```bash
+# Instalación del modulo
+sudo apt install php8.5-xdebug -y
+```
+
+## 7. Cuentas de Desarrollo
 
 El usuario operador web gestiona el contenido del servidor web con permisos limitados a `/var/www/html`.
 
