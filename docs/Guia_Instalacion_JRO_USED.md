@@ -45,6 +45,9 @@
     - [5.5 Comprobación de phpmyadmin](#55-comprobación-de-phpmyadmin)
   - [6. xDebug](#6-xdebug)
     - [6.1. Instalación de xDebug](#61-instalación-de-xdebug)
+    - [6.2 Configuracion de xDebug](#62-configuracion-de-xdebug)
+    - [6.3 Habilitar el modulo xDebug](#63-habilitar-el-modulo-xdebug)
+    - [6.4 Comprobacion del modulo xDebug](#64-comprobacion-del-modulo-xdebug)
   - [7. Cuentas de Desarrollo](#7-cuentas-de-desarrollo)
   - [Autor: Moises Dominguez Cruz , Juan Miguel Dominguez Perdigon](#autor-moises-dominguez-cruz--juan-miguel-dominguez-perdigon)
   - [Modificado por: Juan Rivera Ordóñez](#modificado-por-juan-rivera-ordóñez)
@@ -610,10 +613,65 @@ Accede a traves de la URL **http://10.199.8.97/phpmyadmin**
 ## 6. xDebug
 
 ### 6.1. Instalación de xDebug
+Instalamos el modulo xDebug para php 8.5
 ```bash
 # Instalación del modulo
 sudo apt install php8.5-xdebug -y
 ```
+
+--- 
+
+### 6.2 Configuracion de xDebug
+
+Entramos en la configuracion de xDebug
+
+```bash
+# Modificamos el archivo xdebug.ini
+sudo nano /etc/php/8.5/mods-available/xdebug.ini
+```
+
+Y colocamos las siguientes directivas:
+
+```bash
+zend_extension=xdebug.so
+
+[xdebug]
+xdebug.mode = debug
+xdebug.start_with_request = yes
+xdebug.client_host = 10.199.8.97
+xdebug.client_port = 9003
+xdebug.log = /var/log/xdebug.log
+```
+---
+
+### 6.3 Habilitar el modulo xDebug
+
+```bash
+# Activamos la extension
+sudo phpenmod xdebug
+
+# Reiniciamos el servicio para confirmar los cambios
+sudo systemctl restart apache2
+```
+---
+
+### 6.4 Comprobacion del modulo xDebug
+
+```bash
+# Comprobamos que este instalado con
+php -v
+```
+
+Nos tiene que salir algo parecido a esto:
+
+PHP 8.5.4 (cli) (built: Oct 19 2026 14:35:18) (NTS)
+Copyright (c) The PHP Group
+Built by Ubuntu
+Zend Engine v4.5.4, Copyright (c) Zend Technologies
+    with Xdebug v3.5.0, Copyright (c) 2002-2025, by Derick Rethans
+    with Zend OPcache v8.5.4, Copyright (c), by Zend Technologies
+
+
 
 ## 7. Cuentas de Desarrollo
 
