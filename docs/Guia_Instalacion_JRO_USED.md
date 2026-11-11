@@ -180,6 +180,22 @@ sudo nano /etc/hosts
 #Cambiar antiguo hostname por con el nuevo
 ```
 
+Vamos a configurar el servicio "SFTP" de "SSH"
+```bash
+# Configuramos el archivo "sshd_config"
+sudo nano /etc/ssh/sshd_config
+
+# Ponemos las siguientes directivas:
+# Subsystem sftp /usr/lib/openssh/sftp-server Comentamos esta linea
+Subsystem sftp internal-sftp
+Match Group sftpusers
+ChrootDirectory %h
+ForceCommand internal-sftp -u 2
+AllowTcpForwarding yes
+PermitTunnel no
+X11Forwarding no
+```
+
 ---
 
 ### 1.5. Comprobación de la Configuración Inicial
