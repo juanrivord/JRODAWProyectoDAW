@@ -49,8 +49,7 @@
     - [6.3 Habilitar el modulo xDebug](#63-habilitar-el-modulo-xdebug)
     - [6.4 Comprobacion del modulo xDebug](#64-comprobacion-del-modulo-xdebug)
   - [7. Cuentas de Desarrollo](#7-cuentas-de-desarrollo)
-  - [Autor: Moises Dominguez Cruz , Juan Miguel Dominguez Perdigon](#autor-moises-dominguez-cruz--juan-miguel-dominguez-perdigon)
-  - [Modificado por: Juan Rivera Ordóñez](#modificado-por-juan-rivera-ordóñez)
+    - [7.1. Enjaulamiento de usuarios](#71-enjaulamiento-de-usuarios)
 
 ---
 
@@ -721,8 +720,69 @@ sudo adduser operadorweb2
 sudo adduser operadorweb3
 ```
 
+### 7.1. Enjaulamiento de usuarios
+
+Crearemos un grupo de "sftpusers" para meter dentro los usuarios enjaulados.
+
+```bash
+# Creacion del grupo
+sudo groupadd sftpusers
+```
+
+Ahora creamos el usuario "enjaulado1" y lo metemos en el grupo "www-data" y "sftpusers".
+
+```bash
+# Creamos el usuario enjaulado1 y con la directiva "m" hacemos que cree el directorio si no existe.
+sudo useradd –g www-data –G sftpusers -m –d /var/www/enjaulado1 enjaulado1
+
+# Cambiamos su contraseña
+sudo passwd enjaulado1
+```
+
+Cuando enjaulamos un usuario hay que dar permisos a "root" del directorio del usuario enjaulado, ademas de quitarle el permiso de escritura.
+
+```bash
+# Permisos de root sobre el directorio
+sudo chown root:root /var/www/enjaulado1
+
+# Eliminar permiso de escritura
+sudo chmod 555 /var/www/enjaulado1
+```
+
+Vamos a crear la carpeta "httpdocs" para darle permisos al usuario enjaulado para que trabaje.
+
+```bash
+# Creamos la carpeta httpdocs
+sudo mkdir /var/www/enjaulado1/httpdocs
+
+# Cambio de permisos de la carpeta httpdocs
+sudo chmod –R 2775  /var/www/enjaulado1/httpdocs
+
+# Cambio de propietarios de httpdocs
+sudo chown –R enjaulado1:www-data /var/www/enjaulado1/httpdocs 
+```
+
+Comandos para comprobar todo lo dicho:
+
+```bash
+# Comprobacion de permisos y directorios desde www, nos tiene que salir "enjaulado1"
+ls - l /var/www
+
+# Hacemos lo mismo para la carpeta "enjaulado1"
+ls - l /var/www/enjaulado1
+
+# Y comprobamos el usuario "enjaulado1" para ver que esta creado correctamente
+id enjaulado1
+```
+
+Ejemplo de salida:
+
+![Ejemplo de salida](images/image-27.png)
+
+En "ls -l" Se nos muestra en orden:
+
+(Permisos) (Nº archivos) (Propietario) (Grupo) (Tamaño) (Fecha) (Nombre directorio)
+
+
 ---
-Autor: Moises Dominguez Cruz , Juan Miguel Dominguez Perdigon
----
-Modificado por: Juan Rivera Ordóñez
----
+Autor: Juan Rivera Ordóñez
