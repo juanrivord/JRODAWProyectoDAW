@@ -414,8 +414,6 @@ Esta tabla le dice a NetBeans que el archivo que el servidor está ejecutando co
 
 > **Lado del servidor.** No hay que tocar nada: en la guía de USED se configuró `xdebug.start_with_request = yes` y `xdebug.discover_client_host = yes`, de modo que el servidor intenta conectarse al equipo que pide la página, sea cual sea.
 
-> 📷 *Captura recomendada:* la ventana **Tools > Options > PHP > Debugging** con el puerto 9003.
-
 ---
 
 ### 5.3. Ejemplo de uso de NetBeans
