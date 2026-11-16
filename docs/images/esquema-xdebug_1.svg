@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="flecha" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#37474f"/>
+    </marker>
+    <marker id="flechaRoja" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#b23c17"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="430" fill="#ffffff"/>
+  <text x="500" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">Cómo funciona una sesión de depuración con Xdebug</text>
+
+  <!-- Participantes -->
+  <g font-size="14" text-anchor="middle">
+    <rect x="40" y="50" width="220" height="56" rx="8" fill="#eaf2fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="150" y="74" font-weight="bold" fill="#1f4e79">Navegador</text>
+    <text x="150" y="94" font-size="12" fill="#1a1a1a">en el cliente W10ED</text>
+
+    <rect x="390" y="50" width="220" height="56" rx="8" fill="#eaf7ee" stroke="#2e7d32" stroke-width="2"/>
+    <text x="500" y="74" font-weight="bold" fill="#2e7d32">Servidor JRO-USED</text>
+    <text x="500" y="94" font-size="12" fill="#1a1a1a">Apache + PHP-FPM + Xdebug</text>
+
+    <rect x="740" y="50" width="220" height="56" rx="8" fill="#eaf2fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="850" y="74" font-weight="bold" fill="#1f4e79">IDE (NetBeans / VS Code)</text>
+    <text x="850" y="94" font-size="12" fill="#1a1a1a">en el cliente W10ED</text>
+  </g>
+
+  <!-- Líneas de vida -->
+  <g stroke="#9aa5ad" stroke-width="1.5" stroke-dasharray="5 5">
+    <line x1="150" y1="106" x2="150" y2="410"/>
+    <line x1="500" y1="106" x2="500" y2="410"/>
+    <line x1="850" y1="106" x2="850" y2="410"/>
+  </g>
+
+  <!-- Paso 1 -->
+  <rect x="745" y="122" width="210" height="34" rx="6" fill="#fff4e0" stroke="#b26a00"/>
+  <text x="850" y="144" text-anchor="middle" font-size="12" fill="#1a1a1a">1. Escucha en el puerto 9003</text>
+
+  <g font-size="12" fill="#1a1a1a" text-anchor="middle">
+    <!-- Paso 2 -->
+    <line x1="152" y1="192" x2="494" y2="192" stroke="#37474f" stroke-width="2" marker-end="url(#flecha)"/>
+    <text x="325" y="184">2. Pide la página .php (HTTPS 443)</text>
+
+    <!-- Paso 3 -->
+    <line x1="502" y1="236" x2="844" y2="236" stroke="#b23c17" stroke-width="2" marker-end="url(#flechaRoja)"/>
+    <text x="675" y="228" fill="#b23c17" font-weight="bold">3. Xdebug se conecta al IDE (9003)</text>
+
+    <!-- Paso 4 -->
+    <line x1="848" y1="280" x2="506" y2="280" stroke="#37474f" stroke-width="2" marker-end="url(#flecha)"/>
+    <text x="675" y="272">4. Puntos de ruptura y órdenes (paso a paso)</text>
+
+    <!-- Paso 5 -->
+    <line x1="502" y1="324" x2="844" y2="324" stroke="#37474f" stroke-width="2" marker-end="url(#flecha)"/>
+    <text x="675" y="316">5. Línea actual y valor de las variables</text>
+
+    <!-- Paso 6 -->
+    <line x1="498" y1="372" x2="156" y2="372" stroke="#37474f" stroke-width="2" marker-end="url(#flecha)"/>
+    <text x="325" y="364">6. Página terminada (al pulsar Continuar)</text>
+  </g>
+
+  <text x="325" y="402" text-anchor="middle" font-size="12" font-style="italic" fill="#555555">Mientras se depura, el navegador se queda "cargando"</text>
+</svg>

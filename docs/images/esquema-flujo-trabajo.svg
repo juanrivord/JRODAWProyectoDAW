@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1010 230" width="1010" height="230" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="flecha" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#37474f"/>
+    </marker>
+  </defs>
+  <rect width="1010" height="230" fill="#ffffff"/>
+  <text x="505" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1a1a1a">Ciclo de trabajo diario</text>
+
+  <g font-size="13" fill="#1a1a1a" text-anchor="middle">
+    <rect x="20" y="60" width="170" height="110" rx="10" fill="#eaf2fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="105" y="88" font-size="15" font-weight="bold" fill="#1f4e79">1. Editar</text>
+    <text x="105" y="114">Código en el IDE</text>
+    <text x="105" y="134">(NetBeans o</text>
+    <text x="105" y="154">VS Code)</text>
+
+    <rect x="220" y="60" width="170" height="110" rx="10" fill="#eaf2fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="305" y="88" font-size="15" font-weight="bold" fill="#1f4e79">2. Guardar</text>
+    <text x="305" y="114">Ctrl + S</text>
+    <text x="305" y="134">en la carpeta local</text>
+    <text x="305" y="154">del proyecto</text>
+
+    <rect x="420" y="60" width="170" height="110" rx="10" fill="#fff4e0" stroke="#b26a00" stroke-width="2"/>
+    <text x="505" y="88" font-size="15" font-weight="bold" fill="#b26a00">3. Subir</text>
+    <text x="505" y="114">Automático por SFTP</text>
+    <text x="505" y="134">(puerto 22) como</text>
+    <text x="505" y="154">operadorweb</text>
+
+    <rect x="620" y="60" width="170" height="110" rx="10" fill="#eaf7ee" stroke="#2e7d32" stroke-width="2"/>
+    <text x="705" y="88" font-size="15" font-weight="bold" fill="#2e7d32">4. Probar</text>
+    <text x="705" y="114">En el navegador:</text>
+    <text x="705" y="134">https://10.199.8.97/</text>
+    <text x="705" y="154">y depurar si falla</text>
+
+    <rect x="820" y="60" width="170" height="110" rx="10" fill="#f3eafb" stroke="#6a1b9a" stroke-width="2"/>
+    <text x="905" y="88" font-size="15" font-weight="bold" fill="#6a1b9a">5. Versionar</text>
+    <text x="905" y="114">Commit y push</text>
+    <text x="905" y="134">a GitHub cuando</text>
+    <text x="905" y="154">funciona</text>
+  </g>
+
+  <g stroke="#37474f" stroke-width="2">
+    <line x1="192" y1="115" x2="216" y2="115" marker-end="url(#flecha)"/>
+    <line x1="392" y1="115" x2="416" y2="115" marker-end="url(#flecha)"/>
+    <line x1="592" y1="115" x2="616" y2="115" marker-end="url(#flecha)"/>
+    <line x1="792" y1="115" x2="816" y2="115" marker-end="url(#flecha)"/>
+  </g>
+
+  <path d="M705,172 L705,200 L105,200 L105,176" fill="none" stroke="#37474f" stroke-width="2" stroke-dasharray="7 4" marker-end="url(#flecha)"/>
+  <text x="405" y="219" text-anchor="middle" font-size="12" fill="#1a1a1a">Si algo falla, se corrige y se repite el ciclo</text>
+</svg>
