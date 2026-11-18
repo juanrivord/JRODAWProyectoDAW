@@ -8,12 +8,17 @@ Repositorio de la asignatura **Despliegue de Aplicaciones Web**: reúne la aplic
 
 ## Índice
 
-- [La asignatura](#la-asignatura)
-- [El entorno de trabajo](#el-entorno-de-trabajo)
-- [Documentación](#documentación)
-- [Estructura del repositorio](#estructura-del-repositorio)
-- [Cómo usar este repositorio](#cómo-usar-este-repositorio)
-- [Equipo](#equipo)
+- [JRODAWProyectoDAW](#jrodawproyectodaw)
+  - [Índice](#índice)
+  - [La asignatura](#la-asignatura)
+  - [El entorno de trabajo](#el-entorno-de-trabajo)
+  - [Documentación](#documentación)
+    - [Entorno de desarrollo](#entorno-de-desarrollo)
+    - [Otros documentos](#otros-documentos)
+    - [Enlaces de interés](#enlaces-de-interés)
+  - [Estructura del repositorio](#estructura-del-repositorio)
+  - [Cómo usar este repositorio](#cómo-usar-este-repositorio)
+  - [Equipo](#equipo)
 
 ---
 
@@ -149,5 +154,3 @@ JRODAWProyectoDAW/
 
 - Juan Miguel Domínguez Perdigón
 - Moisés Alberto Domínguez Cruz
-
-<!-- RELLENAR (opcional): profesor/a del módulo, licencia del repositorio. -->
